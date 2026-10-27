@@ -10,10 +10,10 @@
 
 |Nombre completo|Matrícula|
 |---|---|
-|[Pablo Israel Avalos Moreno]|[198642-8]|
-|[Hector Ulises Serrano Ramos]|[198436-4]|
-|[Jessica Abigail]|[198078-6]|
-|[Maria Isabella Rangel Gutierréz]|[198102-8]|
+|[Pablo Israel Avalos Moreno]|
+|[Hector Ulises Serrano Ramos]|
+|[Jessica Abigail]|
+|[Maria Isabella Rangel Gutierréz]|
 
 ## 1. Caso de uso
 
@@ -46,4 +46,4 @@ Memoria mínima=N×2 bytes≈ ? GB
 - **Mitigación:** [Para nuestro riesgo actual (comparación falsa) podemos definir de manera más precisa los parámetros de las comparaciones. ]
 
 ## 5. Evidencia
-[Model card](https://huggingface.co/AvitoTech/DINO-v2-small-for-animal-identification)
+![Model card](Modelhug.png)
