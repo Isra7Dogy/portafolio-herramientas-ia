@@ -1,4 +1,5 @@
  Comandos que aprendí
+ 
 | Comando | Para qué sirve |
 |---|---|
 | `pwd` | Saber en qué carpeta estoy |

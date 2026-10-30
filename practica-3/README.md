@@ -47,3 +47,17 @@ Memoria mínima=N×2 bytes≈ ? GB
 
 ## 5. Evidencia
 ![Model card](Modelhug.png)
+
+
+## Como funciona
+```mermaid
+flowchart LR
+    A([Inicio]) --> B[Usuario ingresa 2 imágenes]
+    B --> C[Modelo DINOv2]
+    C --> D[Extracción de características]
+    D --> E[Comparación de embeddings]
+    E --> F[Cálculo de similitud coseno]
+    F --> G[Resultado de similitud]
+    G --> H([Posible coincidencia del perro])
+```
+
