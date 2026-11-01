@@ -1,10 +1,10 @@
-# [You never walk alone]
+# No soy ni me parezco, Si soy yo
 
-> [Una frase que resuma qué hace el proyecto]
+Este proyecto ayuda a encontrar un perro perdido a traves de la comparación de su foto y el perro que se vio en la calle
 
 **Proyecto integrador · Herramientas de IA**
 
-**Grupo:** [A1 ] · **Equipo:** [ ]
+**Grupo:** [A1] · **Equipo:** [Mascotas]
 
 ## 👥 Integrantes
 
@@ -17,7 +17,7 @@
 
 ## 1. Caso de uso
 
-[POder identificar un perro que se ha perdido a traves de una comparacion entre la del perro perdido y uno que lo estan buscando.]
+[Poder identificar un perro que se ha perdido a traves de una comparacion entre la del perro perdido y uno que lo estan buscando.]
 
 - **Entrada:** [El usuario propociona una fotografia en formato digital de la cara o cuerpo completo del animal que se quiere conocer el parentesco con uno perdido]
 - **Salida:** [El sistema genera un vector de caracteristicas y devuelve el porcentaje de parentesco entre las imagenes]
@@ -35,6 +35,12 @@
 ## 3. Viabilidad de hardware
 
 Memoria mínima=N×2 bytes≈ ? GB
+
+
+$$\text{Memoria mínima} = N \times 4 \text{ bytes} \approx ? \text{ GB}$$
+
+$$\text{Memoria mínima} = 22,100,000 \times 4 = 88,400,000 \text{ bytes}$$
+
 
 - **VRAM disponible en Colab:** [14 ] GB ([GPU-T4])
 - **Dónde se ejecuta:** [Colab on GPU]
