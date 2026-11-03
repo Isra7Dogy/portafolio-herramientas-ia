@@ -36,10 +36,13 @@ Este proyecto ayuda a encontrar un perro perdido a traves de la comparación de 
 
 Memoria mínima=N×2 bytes≈ ? GB
 
+$$
+\text{Memoria mínima} = N \times 4\ \text{bytes} \approx \ ?\ \text{GB}
+$$
 
-$$\text{Memoria mínima} = N \times 4 \text{ bytes} \approx ? \text{ GB}$$
-
-$$\text{Memoria mínima} = 22,100,000 \times 4 = 88,400,000 \text{ bytes}$$
+$$
+\text{Memoria mínima} = 22,100,000 \times 4\ \text{bytes} \approx 88,400,000\ \text{GB}
+$$
 
 
 - **VRAM disponible en Colab:** [14 ] GB ([GPU-T4])
