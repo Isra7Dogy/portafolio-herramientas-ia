@@ -1,10 +1,10 @@
 # No soy ni me parezco, Si soy yo
 
-Este proyecto ayuda a encontrar un perro perdido a traves de la comparación de su foto y el perro que se vio en la calle
+**Este proyecto ayuda a encontrar un perro perdido a traves de la comparación de su foto y el perro que se vio en la calle**
 
 **Proyecto integrador · Herramientas de IA**
 
-**Grupo:** [A1] · **Equipo:** [Mascotas]
+**Grupo:** A1 · **Equipo:** Mascotas
 
 ## 👥 Integrantes
 
