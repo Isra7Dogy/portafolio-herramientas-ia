@@ -31,8 +31,8 @@ demo = gr.Interface(
     fn=clasificar,
     inputs=gr.Image(type="pil", label="Sube o arrastra una imagen"),
     outputs=gr.Label(num_top_classes=3, label="Top 3 etiquetas (%)"),
-    title="Clasificador de imágenes — MobileNetV2",
-    description="Clasifica una imagen usando `google/mobilenet_v2_1.0_224` y muestra las 3 predicciones más probables.",
+    title="¿Qué hay en la foto?",
+    description="Utiliza el modelo google/mobilenet_v2_1.0_224 para identificar las 3 etiquetas más probables de una imagen.",
 )
 
 if __name__ == "__main__":
