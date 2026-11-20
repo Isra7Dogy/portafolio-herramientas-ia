@@ -1,3 +1,4 @@
+from pathlib import Path
 import gradio as gr
 import torch
 from transformers import pipeline
@@ -27,12 +28,25 @@ def clasificar(imagen):
     }
 
 
+# Buscar imágenes dentro de la carpeta ejemplos/
+carpeta_ejemplos = Path("ejemplos")
+extensiones_validas = {".png", ".jpg", ".jpeg", ".webp", ".bmp"}
+
+ejemplos = []
+if carpeta_ejemplos.exists() and carpeta_ejemplos.is_dir():
+    ejemplos = [
+        [str(ruta)]
+        for ruta in sorted(carpeta_ejemplos.iterdir())
+        if ruta.is_file() and ruta.suffix.lower() in extensiones_validas
+    ]
+
 demo = gr.Interface(
     fn=clasificar,
     inputs=gr.Image(type="pil", label="Sube o arrastra una imagen"),
     outputs=gr.Label(num_top_classes=3, label="Top 3 etiquetas (%)"),
     title="¿Qué hay en la foto?",
     description="Utiliza el modelo google/mobilenet_v2_1.0_224 para identificar las 3 etiquetas más probables de una imagen.",
+    examples=ejemplos or None,
 )
 
 if __name__ == "__main__":
