@@ -17,7 +17,7 @@ clasificador = pipeline(
 
 def clasificar(imagen):
     """Recibe una imagen y devuelve:
-    1) diccionario con las 3 etiquetas más probables y su porcentaje (0 a 100),
+    1) diccionario con las 3 etiquetas más probables (probabilidades de 0.0 a 1.0),
     2) tiempo de inferencia en segundos con dos decimales.
     """
     if imagen is None:
@@ -35,7 +35,7 @@ def clasificar(imagen):
 
     tiempo_seg = f"{fin - inicio:.2f} s"
     etiquetas = {
-        item["label"]: round(float(item["score"]) * 100, 2)
+        item["label"]: float(item["score"])
         for item in resultados
     }
 
